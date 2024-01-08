@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root{
+--color: #fff;
+--bg-bleue: #6990f2;   
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+} 
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--bg-bleue);
+}
+
+.drag-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed var(--color);
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+}
+.drag-area.active {
+    border: 2px solid var(--color);
+}
+.drag-area .icon {
+    font-size: 100px;
+    color: var(--color);
+}
+.drag-area header {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color);
+}
+.drag-area span {
+    font-size: 30px;
+    font-weight: 500px;
+    color: var(--color);
+    margin: 10px 0 15px 0;
+}
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500px;
+    border: none;
+    outline: none;
+    background: var(--color);
+    color: var(--bg-bleue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-area img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 5px;
+}
